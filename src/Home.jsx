@@ -2,6 +2,7 @@ import AdminHome from './AdminHome'
 import Navbar from './navbar'
 import UserHome from './user'
 import Owner from './Owner'
+import {useState} from 'react';
 
 export const mockEmployees = [
   {
@@ -26,7 +27,7 @@ export const mockEmployees = [
 
 const Home = () => {
 
-  const [ employees, setEmployees] = useStates(mockEmployees)
+  const [ employees, setEmployees] = useState(mockEmployees)
   // const addemployees = (employee, index) => {
   //   const { newEmployee, value } = employee
   //   const updatedEmployees = [...employees]
